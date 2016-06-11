@@ -1,3 +1,6 @@
+## @package t_mainMenu
+#
+# Tests for the @p psNuke_mainMenu module
 import unittest
 import nuke
 
@@ -9,7 +12,8 @@ class TestMenus(unittest.TestCase):
     def setUp(self):
         psNuke_mainMenu.pipelineMenu()
     
-    def testMissingMenu(self):
+    ## Test for the pipeline system's menu
+    def testRootMenu(self):
         self.assertEqual(type(self.mainNukeMenu.findItem('My Menu')), 
                          nuke.MenuItem)  # Menu item object returned
     
