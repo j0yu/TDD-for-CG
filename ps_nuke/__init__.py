@@ -18,7 +18,7 @@ import psNuke_mainMenu
 # are run, defult to @p False as we rarely want to exit Nuke immediately after 
 # opening it
 def runUnitTests(exitAfterwards=False):
-    print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n"
+    print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n"\
           "{0:#^70}\n\n".format("","UNIT TESTS")
 
     # 1. Error test for parameters
@@ -36,7 +36,7 @@ def runUnitTests(exitAfterwards=False):
 #
 # 1. Setup the pipeline menu
 def initialize():
-    print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n"
+    print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n"\
           "{0:#^70}\n\n".format(""," INITIALIZE")
 
     # 1. Setup the pipeline menu
