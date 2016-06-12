@@ -1,8 +1,8 @@
 # TDD for CG
-Basic setup for TDD in Maya and Nuke.
+Basic setup for [Test Driven Development](https://www.google.co.uk/search?q=TDD) 
+in Maya and Nuke.
 
-We will be testing and creating a custom menu in
-Nuke and Maya.
+We will be testing and creating a custom menu in Nuke and Maya.
 
 This sets up a scenario where this git repository is the pipeline system's root
 code repository, where all the artists pipeline tools and setup will be located.
@@ -40,4 +40,5 @@ help menu.
 Nuke's console
 
 # More information
-See the [Wiki](https://github.com/j0yu/TDD-for-CG/wiki) for more information
+See the [Wiki (In Progress)](https://github.com/j0yu/TDD-for-CG/wiki) for more 
+information
