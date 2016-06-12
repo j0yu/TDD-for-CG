@@ -1,5 +1,6 @@
 # Insert the following into Nuke's menu.py, e.g. the one on your server/global
-# one all artists refer to
+# one all artists refer to. For personal testing, your home folder's 
+# .nuke/menu.py would be sufficient
 
 # ------------------------- BEGIN ----------------------------------------------
 # State the directory to the root folder of the pipeline system code repository
