@@ -1,4 +1,4 @@
-es# TDD for CG
+# TDD for CG
 Basic setup for TDD in Maya and Nuke.
 
 We will be testing and creating a custom menu in
@@ -34,5 +34,10 @@ run tests.
         just be executed without being tested.
 
 2. Either way, a menu called "My Menu" should be created to the right of the 
-help menu, if not and you chosen `Yes`, then a test failure should appear in the
+help menu.
+    
+    If not and you chosen `Yes`, then a test failure should appear in the
 Nuke's console
+
+# More information
+See the [Wiki](https://github.com/j0yu/TDD-for-CG/wiki) for more information
