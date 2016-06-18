@@ -19,12 +19,12 @@ else:
 # Next import the Maya modules from the pipeline system, run tests if chosen
 import ps_maya
 buttonFlags = {
-    title='Run tests', 
-    message: "Run tests?", 
-    button=['Yes','No'], 
-    defaultButton='Yes', 
-    cancelButton='No', 
-    dismissString='No'
+    "title": 'Run tests', 
+    "message": "Run tests?", 
+    "button": ['Yes','No'], 
+    "defaultButton": 'Yes', 
+    "cancelButton": 'No', 
+    "dismissString": 'No'
 }
 if pm.confirmDialog(**buttonFlags) == "Yes":
     ps_maya.runUnitTests()
