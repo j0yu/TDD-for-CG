@@ -18,8 +18,8 @@ import psMaya_mainMenu
 # are run, defult to @p False as we rarely want to exit Maya immediately after 
 # opening it
 def runUnitTests(exitAfterwards=False):
-    print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n"\
-          "{0:#^70}\n\n".format("","UNIT TESTS")
+    print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n{2:^70}\n"\
+          "{0:#^70}\n\n".format("","UNIT TESTS","See results in output window")
 
     # 1. Error test for parameters
     if type(exitAfterwards) != bool:
@@ -37,7 +37,7 @@ def runUnitTests(exitAfterwards=False):
 # 1. Setup the pipeline menu
 def initialize():
     print "\n\n\n\n\n\n\n\n{0:#^70}\n{1:^70}\n"\
-          "{0:#^70}\n\n".format(""," INITIALIZE")
+          "{0:#^70}\n\n".format("","INITIALIZE")
 
     # 1. Setup the pipeline menu
     psMaya_mainMenu.pipelineMenu()

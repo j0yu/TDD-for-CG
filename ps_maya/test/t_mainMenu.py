@@ -7,17 +7,20 @@ import pymel.core as pm
 from ps_maya import psMaya_mainMenu
 
 class TestMenus(unittest.TestCase):
-    # mainMayaMenu = maya.menu('Maya')
+    mainMayaWindow = pm.ui.PyUI("MayaWindow")
 
     def setUp(self):
-        psMaya_mainMenu.pipelineMenu()
+        self.myMenu = psMaya_mainMenu.pipelineMenu()
     
     ## Test for the pipeline system's menu
-    def testRootMenu(self):
-        raise NotImplementedError("Implement test routine for Maya menu")
-        # self.assertEqual(type(self.mainMayaMenu.findItem('My Menu')), 
-        #                  maya.MenuItem)  # Copied from Nuke
+    def testRootMenuExists(self):
+        self.assertIn(self.myMenu.rootMenu.shortName(), 
+                      self.mainMayaWindow.getMenuArray())
+
+    ## Test for the pipeline system's menu name
+    def testRootMenuLabel(self):
+        self.assertEqual(self.myMenu.rootMenu.getLabel(), 
+                         "My Menu")
     
     def tearDown(self):
-        raise NotImplementedError("Implement tear down routine for Maya menu")
-        # maya.menu('Maya').removeItem('My Menu')  # Copied from Nuke
+        self.myMenu.rootMenu.delete()
