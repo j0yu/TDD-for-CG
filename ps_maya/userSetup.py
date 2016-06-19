@@ -1,6 +1,6 @@
-# Insert the following into Maya's userSetup.py, e.g. the one on your #
-# server/global one all artists refer to. For personal testing, your maya 
-# folder's scripts/userSetup.py would be sufficient
+# Insert the following into Maya's userSetup.py in a maya scripts folder, 
+# e.g. the one on your # server/global one all artists refer to. 
+# For personal testing, your maya folder's scripts/userSetup.py will be sufficient
 
 # ------------------------- BEGIN ----------------------------------------------
 import pymel.core as pm
