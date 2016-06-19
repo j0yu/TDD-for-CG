@@ -4,6 +4,7 @@
 
 # ------------------------- BEGIN ----------------------------------------------
 import pymel.core as pm
+from maya.utils import executeDeferred
 
 # State the directory to the root folder of the pipeline system code repository
 # This will be error checked
@@ -27,8 +28,8 @@ buttonFlags = {
     "dismissString": 'No'
 }
 if pm.confirmDialog(**buttonFlags) == "Yes":
-    ps_maya.runUnitTests()
+    pm.evalDeferred(ps_maya.runUnitTests)
 
-# Then initialize the pipeline system for Nuke
-ps_maya.initialize()
+# Then initialize the pipeline system for Maya
+pm.evalDeferred(ps_maya.initialize)
 # ------------------------- END ----------------------------------------------
